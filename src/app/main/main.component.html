@@ -8,7 +8,7 @@
 
     <div class="main-list">
         <div class="main-list-item" *ngFor="let item of listaAtividade; let i = index" id="item-{{i}}">
-            <input type="checkbox" name="check"  (click)="del(i)">
+            <input type="checkbox" name="check">
             <p id="{{i}}"> {{item}} </p>
             <div class="main-list-item-btn" (click)="remover(i)" > Remover </div>
         </div>
