@@ -1,0 +1,73 @@
+@import '../../styles.scss';
+
+.main{
+    padding: 1rem (calc(100vw - 95%));
+
+    &-input{    
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 1rem;
+
+        input{
+            width: 90%;
+            border: none;
+            padding: 0 .7rem;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+        }
+        &-btn{
+            padding: .2rem 1rem;
+            text-align: center;
+            margin-left: .5rem;
+            border-radius: 5px;
+            background-color: $color-yellow;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-list{
+        margin-top: 1rem;
+
+        &-item{
+            .text{
+                display: flex;
+                align-items: center;
+                input {
+                    width:  1rem;
+                    height: 1rem;
+                    margin-right: .5rem;
+                }
+            }
+            input{
+                width: 4%;
+            }
+            p{
+                width: 90%;
+            }
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            margin-bottom: .5rem;
+            padding: .5rem 1rem;
+            border: 1px solid $color-white;
+
+            &-btn{
+                width: 4rem;
+                padding: .5rem;
+                font-size: .7rem;
+                text-align: center;
+                color: $color-white;
+                background-color: $color-red;
+                border-radius: 5px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}

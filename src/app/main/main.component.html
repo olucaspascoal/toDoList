@@ -1,0 +1,16 @@
+<main class="main">
+    <h2> Minhas Tarefas </h2>
+
+    <div class="main-input">
+        <input type="text" placeholder="Digite aqui a sua tarefa" [(ngModel)]="tarefa">
+        <div class="main-input-btn" (click)="adicionar()"> Adicionar </div>
+    </div>
+
+    <div class="main-list">
+        <div class="main-list-item" *ngFor="let item of listaAtividade; let i = index" id="item-{{i}}">
+            <input type="checkbox" name="check"  (click)="del(i)">
+            <p id="{{i}}"> {{item}} </p>
+            <div class="main-list-item-btn" (click)="remover(i)" > Remover </div>
+        </div>
+    </div>
+</main>
